@@ -1,0 +1,41 @@
+/**
+ * @description 自定义reset.css
+ * @author aolongyu
+ * @created 2020/12/01 09:47:19
+ */
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(245, 246, 247);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.clearFloat {
+    clear: both;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+}

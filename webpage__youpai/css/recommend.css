@@ -1,0 +1,329 @@
+.body-container-recommend {
+    width: 1420px;
+    margin: 0 auto;
+}
+
+.recommend {
+    margin-top: 35px;
+}
+
+.recommend-recommend {
+    float: left;
+}
+
+.recommend-icon {
+    display: inline-block;
+    width: 26px; height: 28px;
+    background: url(../static/img/css_sprites.png) -337px -514px;
+}
+
+.leaderborder-icon {
+    display: inline-block;
+    width: 28px; height: 28px;
+    background: url(../static/img/css_sprites.png)  -289px -514px;
+}
+
+.recommend-title .text {
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 7px;
+    font-size: 22px;
+    vertical-align: top;
+}
+
+.recommend-cover {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.recommend-cover-main {
+    float: left;
+    position: relative;
+    width: 540px;
+    height: 345px;
+    margin-top: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recommend-cover-main:hover {
+    color: rgb(255, 156, 0);
+}
+
+.recommend-cover-main:hover .turn {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.recommend-cover-main>.carousel {
+    width: 540px;
+    height: 37px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 37px;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.recommend-cover-sub {
+    float: left;
+    width: 484px;
+    overflow-x: hidden;
+}
+
+.recommend .sub-text {
+    width: 222px;
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 40px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.recommend .cover-sub { 
+    float: left;
+    height: 165px;
+    margin-left: 20px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: rgb(93, 93, 93);
+    float: left;
+    width: 222px;
+    margin-top: 15px;
+    background-color: rgb(255, 255, 255);
+    font-size: 0;
+}
+
+.cover-sub:hover {
+    color: rgb(255, 156, 0);
+}
+
+.cover-sub-special {
+    margin-right: 0;
+}
+
+.recommend-cover-sub .cover {
+    width: 222px;
+    height: 125px;
+}
+
+.recommend-leaderboard {
+    position: relative;
+    width: 372px;
+    float: right;
+}
+
+.leaderboard-title {
+    width: 380px;
+}
+
+.leaderborder-title-left {
+    float: left;
+}
+
+.leaderborder-title-left .text {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-left: 7px;
+    font-size: 22px;
+}
+
+.leaderborder-title-right .more {
+    float: right;
+    margin-top: 8px;
+    margin-right: 9px;
+    color: rgb(93, 93, 93);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.loaderboard-content {
+    float: right;
+    width: 372px;
+    height: 345px;
+    margin-top: 15px;
+}
+
+.loaderboard-content .content {
+    float: left;
+    width: 100%;
+}
+
+.loaderboard-content .item {
+    float: left;
+    position: relative;
+    width: 124px;
+    height: 115px;
+    color: rgb(93, 93, 93);
+    font-size: 12px;
+    text-align: center;
+}
+
+.loaderboard-content .live {
+    position: absolute;
+    top: 18px;
+    left: 72px;
+}
+
+.loaderboard-content .item:hover .nickname {
+    color: rgb(255, 156, 0);
+}
+
+.loaderboard-content .avater {
+    width: 60px;
+    height: 60px;
+    margin-top: 17px;
+    margin-right: 32px;
+    border-radius: 50%;
+}
+
+.loaderboard-content .avater-no {
+    position: absolute;
+    top: 0;
+    left: 32px;
+    display: block;
+    z-index: -1;
+}
+
+.loaderboard-content .item .nickname {
+    display: inline-block;
+    width: 70px;
+    margin-top: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.loaderboard-content .item .nickname-no {
+    margin-top: 90px;
+}
+
+.loaderboard-content .item-1 {
+    background: url(../static/img/css_sprites.png) -252px -10px;
+}
+
+.loaderboard-content .item-2 {
+    background: url(../static/img/css_sprites.png) -252px -145px;
+}
+
+.loaderboard-content .item-3 {
+    background: url(../static/img/css_sprites.png) -396px -10px;
+}
+
+.loaderboard-content .item-4 {
+    background: url(../static/img/css_sprites.png) -396px -145px;
+}
+
+.loaderboard-content .item-5 {
+    background: url(../static/img/css_sprites.png) -10px -332px;
+}
+
+.loaderboard-content .item-6 {
+    background: url(../static/img/css_sprites.png) -154px -332px;
+}
+
+.loaderboard-content .item-7 {
+    background: url(../static/img/css_sprites.png) -298px -332px;
+}
+
+.loaderboard-content .item-8 {
+    background: url(../static/img/css_sprites.png) -540px -10px;
+}
+
+.loaderboard-content .item-9 {
+    background: url(../static/img/css_sprites.png) -540px -145px;
+}
+
+
+/* 轮播图样式 */
+#outer {
+    position: relative;
+    width: 540px;
+    height: 309px;
+    overflow: hidden;
+}
+
+#imgList {
+    position: absolute;
+    list-style: none;
+    left: 0;
+}
+
+#imgList li {
+    float: left;
+    height: 309px;
+}
+
+#imgList img {
+    width: 540px;
+    height: 309px;
+}
+
+#navDiv {
+    position: absolute;
+    right: 6px;
+    bottom: 15px;
+    z-index: 999;
+}
+
+#navDiv a {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    background-color: rgb(229, 222, 226);
+    border-radius: 4px;
+    transition: all .1s;
+}
+
+#carouselMask {
+    position: absolute;
+    width: 540px;
+    bottom: 0;
+    z-index: 998;
+}
+
+.turn {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.turn div {
+    width: 40px;
+    height: 40px;
+
+}
+
+.turn .left {
+    float: left;
+    margin-left: 18px;
+    background-image: url(../static/img/recommend/left.png);
+}
+
+.turn .left:hover {
+    background-image: url(../static/img/recommend/left-hover.png);
+}
+
+.turn .right {
+    float: right;
+    margin-right: 18px;
+    background-image: url(../static/img/recommend/right.png);
+}
+
+.turn .right:hover {
+    background-image: url(../static/img/recommend/right-hover.png);
+}

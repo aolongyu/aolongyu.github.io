@@ -1,0 +1,157 @@
+.nav {
+    min-width: 1420px;
+    max-width: 1920px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+    background-color: rgb(25, 41, 57);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.nav-wrap {
+    max-width: 1500px;
+    min-width: 1420px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-logo {
+    display: inline-block;
+    width: 125px; height: 27px;
+    background: url(../static/img/css_sprites.png) -97px -467px;
+}
+
+.nav-text {
+    position: relative;
+    display: inline-block;
+    /* vertical-align: top; */
+}
+
+.nav-left a {
+    float: left;
+    height: 27px;
+    padding: 6px 14px;
+    margin-left: 21px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.nav-left .checked {
+    background-color: rgb(250, 161, 0);
+}
+
+.search-box {
+    height: 33px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-search {
+    color: rgb(255, 255, 255);
+    border: .1px solid rgb(61, 61, 61);
+    text-indent: 8px;
+    outline: none;
+    width: 180px;
+    height: 20px;
+    margin-left: 50px;
+    border-radius: 20px;
+    background-color: rgb(19, 31, 43);
+}
+
+.search-icon {
+    position: absolute;
+    top: 3px;
+    right: 12px;
+    width: 15px; height: 15px;
+    background: url(../static/img/css_sprites.png) -648px -350px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+
+}
+
+.nav-right {
+    float: right;
+    width: 368px;
+}
+
+.nav-link {
+    float: left;
+    vertical-align: top;
+}
+
+.nav-link .link {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 7px;
+    color: rgb(166, 182, 200);
+    font-size: 12px;
+}
+
+.nav-icon {
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+}
+
+.icon-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1px;
+    margin-left: 7px;
+}
+
+.icon-download {
+    background: url(../static/img/css_sprites.png) -645px -280px;
+}
+
+.icon-like {
+    background: url(../static/img/css_sprites.png) -648px -315px;
+}
+
+.icon-upload {
+    background: url(../static/img/css_sprites.png) -540px -431px;
+}
+
+.avater {
+    float: right;
+}
+
+.avater-message {
+    display: inline-block;
+    padding-top: 4px;
+    height: 34px;
+}
+
+.nav .nickname {
+    max-width: 63px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7px;
+    margin-left: 5px;
+    color: rgb(166, 182, 200);
+    font-size: 12px;
+}
+
+.avater-arrow {
+    display: inline-block;
+    width: 20px;
+    height: 34px;
+    vertical-align: top;
+    background: url(../static/img/css_sprites.png) -435px -417px;
+}

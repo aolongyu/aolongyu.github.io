@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./static/icon/favicon.ico" mce_href="./static/icon/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/myselfReset.css">
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/play-window.css">
+    <link rel="stylesheet" href="./css/prompt.css">
+    <link rel="stylesheet" href="./css/channel.css">
+    <link rel="stylesheet" href="./css/recommend.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/popular.css">
+    <link rel="stylesheet" href="./css/vrecommend.css">
+    <link rel="stylesheet" href="./css/kpl.css">
+    <link rel="stylesheet" href="./css/okami.css">
+    <link rel="stylesheet" href="./css/glory.css">
+    <link rel="stylesheet" href="./css/float.css">
+    <title>游拍-宽屏-首页</title>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <div class="nav">
+        <div class="nav-wrap">
+            <div class="nav-left">
+                <div class="nav-logo"></div>
+                <div class="nav-text">
+                    <a class="checked" href="#">首页</a>
+                    <a href="#">直播</a>
+                    <a href="#">视频</a>
+                    <a href="#">分类专区</a>
+                </div>
+                <div class="search-box">
+                    <input class="nav-search" type="text" placeholder="宇宙波斑，你是神" />
+                    <button class="search-icon" href="#"></button>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-link">
+                    <a class="link" href="#"><i class="nav-icon icon-download"></i><span class="icon-text">下载</span></a>
+                    <a class="link" href="#"><i class="nav-icon icon-like"></i><span class="icon-text">关注</span></a>
+                    <a class="link" href="#"><i class="nav-icon icon-upload"></i><span class="icon-text">上传</span></a>
+                </div>
+                <div class="avater">
+                    <a class="avater-message" href="#">
+                        <img src="./static/img/nav/avater.png" alt="">
+                        <span class="nickname">哈喽小游戏哈喽小游戏</span>
+                    </a>
+                    <a class="avater-arrow" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 播放窗口 -->
+    <div class="play-window-container">
+        <div class="play-wrap">
+            <div class="play-window">
+                <div class="play-window-vedio">
+                    <img class="play-window-cover" src="./static/img/play-window/cover-vedio.png" alt="dota">
+                    <input class="play-window-btn" type="button" value="进入直播间">
+                    <div class="play-window-component">
+                        <img class="component play" src="./static/img/play-window/play.png" alt="">
+                        <i class="component line"></i>
+                        <img class="component play" src="./static/img/play-window//volume.png" alt="">
+                        <input class="component range" type="range" min="0" max="100" oninput="getVal(this.value)"
+                            onchange="getVal(this.value)">
+                        <input class="btn" type="button" value="进入直播间">
+                    </div>
+                </div>
+
+                <ul class="advertising">
+                    <li>
+                        <img src="./static/img/play-window/ad-1.png" alt="ad-1">
+                        <span class="checked-bg"></span>
+                    </li>
+                    <li>
+                        <img src="./static/img/play-window/ad-2.png" alt="ad-2">
+                        <span class="checked-bg"></span>
+                    </li>
+                    <li>
+                        <img src="./static/img/play-window/ad-3.png" alt="ad-3">
+                        <span class="checked-bg"></span>
+                    </li>
+                    <li>
+                        <img src="./static/img/play-window/ad-4.png" alt="ad-4">
+                        <span class="checked-bg"></span>
+                    </li>
+                    <li>
+                        <img src="./static/img/play-window/ad-5.png" alt="ad-5">
+                        <span class="checked-bg"></span>
+                    </li>
+                    <li>
+                        <img src="./static/img/play-window/ad-6.png" alt="ad-6">
+                        <span class="checked-bg"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 平台承诺warn -->
+    <div class="prompt">
+        <div class="prompt-wrap">
+            <i class="prompt-icon"></i>
+            <span class="message">
+                <b class="special">本平台承诺：</b>
+                本平台倡导绿色，健康的游戏直播，严禁涉黄，诈骗等危害用户行为，一经发现永久封禁直播间并上报相关部门处理，请主播严格遵守主播规则</span>
+        </div>
+    </div>
+
+    <!-- 手游频道、端游频道、全部频道 -->
+    <div class="body-container-channel">
+        <div class="channel clearfix">
+            <!-- 手游频道 -->
+            <div class="channel-any channel-mobile">
+                <div class="channel-top clearfix">
+                    <i class="channel-icon mobile-icon"></i>
+                    <a href="#" class="main-title">手游频道 ></a>
+                    <a href="#" class="sub-text">王者荣耀</a>
+                    <span class="line">|</span>
+                    <a href="#" class="sub-text">球球大作战</a>
+                    <span class="line">|</span>
+                    <a href="#" class="sub-text">明日之后</a>
+                </div>
+
+                <div class="channel-container container-mobile clearfix">
+                    <a href="#" class="content">
+                        <img class="cover" src="./static/img/channel/mobile-1.png" alt="">
+                        <p class="channel-text text">单人四排，见人就锤单人四排，见人就锤单人四排，见人就锤单人四排，见人就锤单人四排，见人就锤单人四排，见人就锤单人四排，见人就锤</p>
+                        <div class="wrap">
+                            <i class="play"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="content">
+                        <img class="cover" src="./static/img/channel/mobile-2.png" alt="">
+                        <p class="channel-text text">最强王者，微服私访记，收闭门徒弟最强王者，微服私访记，收闭门徒弟</p>
+                        <div class="wrap">
+                            <i class="play"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="content">
+                        <img class="cover" src="./static/img/channel/mobile-3.png" alt="">
+                        <p class="channel-text text">单人四排，见人就锤单人四排，见人就锤单人四排，见人就锤单人四排，见人就锤单人四排，见人就锤单人四排，见人就锤单人四排，见人就锤</p>
+                        <div class="wrap">
+                            <i class="play"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="content">
+                        <img class="cover" src="./static/img/channel/mobile-4.png" alt="">
+                        <p class="channel-text text">最强王者，微服私访记，收闭门徒弟最强王者，微服私访记，收闭门徒弟</p>
+                        <div class="wrap">
+                            <i class="play"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- 端游频道 -->
+            <div class="channel-any channel-pc clearfix">
+                <div class="channel-top clearfix">
+                    <i class="channel-icon pc-icon"></i>
+                    <a href="#" class="main-title">端游频道 ></a>
+                    <a href="#" class="sub-text">生死狙击</a>
+                    <span class="line">|</span>
+                    <a href="#" class="sub-text">火线精英</a>
+                    <span class="line">|</span>
+                    <a href="#" class="sub-text">英雄联盟</a>
+                </div>
+                <div class="channel-container container-pc clearfix">
+                    <a href="#" class="content">
+                        <img class="cover" src="./static/img/channel/pc-1.png" alt="">
+                        <p class="channel-text text">单人四排，见人就锤</p>
+                        <div class="wrap">
+                            <i class="play"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="content content-special">
+                        <img class="cover" src="./static/img/channel/pc-2.png" alt="">
+                        <p class="channel-text text">最强王者，微服私访记，收闭门</p>
+                        <div class="wrap">
+                            <i class="play"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="content">
+                        <img class="cover" src="./static/img/channel/pc-3.png" alt="">
+                        <p class="channel-text text">世界级后羿，带粉胜率一百一百王者无敌，闭门教学简直完美</p>
+                        <div class="wrap">
+                            <i class="play"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="content content-special">
+                        <img class="cover" src="./static/img/channel/pc-4.png" alt="">
+                        <p class="channel-text text">最强猴子</p>
+                        <div class="wrap">
+                            <i class="play"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 全部频道 -->
+            <div class="channel-any channel-all clearfix">
+                <div class="channel-top clearfix">
+                    <i class="channel-icon all-icon"></i>
+                    <a href="#" class="main-title">全部频道 ></a>
+                    <a href="#" class="sub-text">全能大神</a>
+                    <span class="line">|</span>
+                    <a href="#" class="sub-text">球球大作战</a>
+                    <span class="line">|</span>
+                    <a href="#" class="sub-text">潜力新秀</a>
+                </div>
+                <div class="channel-container container-all clearfix">
+                    <a href="#" class="content">
+                        <img class="cover" src="./static/img/channel/all-1.png" alt="">
+                        <p class="channel-text text">单人四排，见人就锤</p>
+                        <div class="wrap">
+                            <i class="play"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="content content-special">
+                        <img class="cover" src="./static/img/channel/all-2.png" alt="">
+                        <p class="channel-text text">最强王者，微服私访记，收闭门</p>
+                        <div class="wrap">
+                            <i class="play"></i>
+                        </div>
+                    </a><a href="#" class="content">
+                        <img class="cover" src="./static/img/channel/all-3.png" alt="">
+                        <p class="channel-text text">世界级后羿，带粉胜率一百一百王者无敌，闭门教学简直完美</p>
+                        <div class="wrap">
+                            <i class="play"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="content content-special">
+                        <img class="cover" src="./static/img/channel/all-4.png" alt="">
+                        <p class="channel-text text">最强猴子</p>
+                        <div class="wrap">
+                            <i class="play"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 精彩推荐、魅力主播榜 -->
+    <div class="body-container-recommend clearfix">
+        <div class="recommend clearfix">
+            <!-- 精彩推荐 -->
+            <div class="recommend-recommend">
+                <div class="recommend-title">
+                    <i class="recommend-icon"></i>
+                    <span class="text">精彩推荐</span>
+                </div>
+                <div class="recommend-cover">
+                    <div class="recommend-cover-main">
+                        <div id="outer">
+                            <ul id="imgList">
+                                <li><img class="elementImg" src="./static/img/recommend/recommend-cover1.png" alt="">
+                                </li>
+                                <li><img class="elementImg" src="./static/img/recommend/recommend-cover2.png" alt="">
+                                </li>
+                                <li><img class="elementImg" src="./static/img/recommend/recommend-cover3.png" alt="">
+                                </li>
+                                <li><img class="elementImg" src="./static/img/recommend/recommend-cover4.png" alt="">
+                                </li>
+                                <li><img class="elementImg" src="./static/img/recommend/recommend-cover1.png" alt="">
+                                </li>
+                            </ul>
+                            <div id="navDiv">
+                                <a class="elementA" href="javascript:;"></a>
+                                <a class="elementA" href="javascript:;"></a>
+                                <a class="elementA" href="javascript:;"></a>
+                                <a class="elementA" href="javascript:;"></a>
+                            </div>
+                            <img id="carouselMask" src="./static/img/recommend/carousel-mask.png" alt="">
+                        </div>
+                        <div class="carousel"><span class="carousel-activity">[活动]游拍代言人，我们再这里等着你~</span></div>
+                        <div class="turn">
+                            <div class="left" onclick="changePage('pre')"></div>
+                            <div class="right" onclick="changePage('next')"></div>
+                        </div>
+                    </div>
+                    <div class="recommend-cover-sub clearfix">
+                        <a href="#" class="cover-sub">
+                            <img class="cover" src="./static/img/recommend/cover-sub-1.png" alt="">
+                            <p class="sub-text">[活动]新年打年兽，进军爵位颜[活动]新年打年兽，进军爵位颜</p>
+                        </a>
+                        <a href="#" class="cover-sub cover-sub-special">
+                            <img class="cover" src="./static/img/recommend/cover-sub-2.png" alt="">
+                            <p class="sub-text">[直播]你最厉害</p>
+                        </a>
+                        <a href="#" class="cover-sub">
+                            <img class="cover" src="./static/img/recommend/cover-sub-3.png" alt="">
+                            <p class="sub-text">[活动]中秋月圆日</p>
+                        </a>
+                        <a href="#" class="cover-sub cover-sub-special">
+                            <img class="cover" src="./static/img/recommend/cover-sub-4.png" alt="">
+                            <p class="sub-text">[视频]你最厉害</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 魅力主播榜 -->
+            <div class="recommend-leaderboard">
+                <div class="leaderboard-title clearfix">
+                    <div class="title leaderborder-title-left">
+                        <i class="leaderborder-icon"></i>
+                        <span class="text">魅力主播榜</span>
+                    </div>
+                    <div class="title leaderborder-title-right clearfix">
+                        <a class="more" href="#">更多排行 ></a>
+                    </div>
+                </div>
+                <div class="loaderboard-content">
+                    <a href="#" class="item item-1">
+                        <img class="avater avater-no" src="./static/img/recommend/leaderboard-4.png" alt="">
+                        <span class="nickname nickname-no">低调的加菲猫低调的加菲猫</span>
+                    </a>
+                    <a href="#" class="item item-2">
+                        <img class="avater avater-no" src="./static/img/recommend/leaderboard-5.png" alt="">
+                        <span class="nickname nickname-no">特工队</span>
+                    </a>
+                    <a href="#" class="item item-3">
+                        <img class="avater avater-no" src="./static/img/recommend/leaderboard-6.png" alt="">
+                        <span class="nickname nickname-no">机制的不卡君子</span>
+                    </a>
+                    <a href="#" class="item item-4">
+                        <img class="avater" src="./static/img/recommend/leaderboard-4.png" alt="">
+                        <span class="nickname">祝你好运</span>
+                    </a>
+                    <a href="#" class="item item-5">
+                        <img class="avater" src="./static/img/recommend/leaderboard-5.png" alt="">
+                        <span class="nickname">尔号</span>
+                    </a>
+                    <a href="#" class="item item-6">
+                        <img class="avater" src="./static/img/recommend/leaderboard-6.png" alt="">
+                        <span class="nickname">解忧杂货铺</span>
+                    </a>
+                    <a href="#" class="item item-7">
+                        <img class="avater" src="./static/img/recommend/leaderboard-7.png" alt="">
+                        <span class="nickname">祝你好运</span>
+                    </a>
+                    <a href="#" class="item item-8">
+                        <img class="avater" src="./static/img/recommend/leaderboard-8.png" alt="">
+                        <span class="nickname">兜里的糖</span>
+                    </a>
+                    <a href="#" class="item item-9">
+                        <img class="avater" src="./static/img/recommend/leaderboard-9.png" alt="">
+                        <span class="nickname">小米</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 热门分类 -->
+    <div class="body-container-popular">
+        <div class="popular clearfix">
+            <div class="popular-title clearfix">
+                <div class="popular-title-left">
+                    <i class="popular-icon"></i>
+                    <span class="special">热门分类</span>
+                    <span class="sub">
+                        <a href="#">全部直播</a> | <a href="#">手游频道</a> | <a href="#">端游频道</a>
+                    </span>
+                </div>
+                <div class="popular-title-right">
+                    <a href="#">更多 ></a>
+                </div>
+            </div>
+            <div class="popular-content clearfix">
+                <a href="#" class="item item-1">
+                    <img class="logo" src="./static/img/popular/popular-logo-1.png" alt="">
+                    <div class="text">穿越火线穿越火线穿越火线</div>
+                </a>
+                <a href="#" class="item item-2">
+                    <img class="logo" src="./static/img/popular/popular-logo-2.png" alt="">
+                    <div class="text">王者荣耀</div>
+                </a>
+                <a href="#" class="item item-3">
+                    <img class="logo" src="./static/img/popular/popular-logo-3.png" alt="">
+                    <div class="text">梦幻西游无双</div>
+                </a>
+                <a href="#" class="item item-4">
+                    <img class="logo" src="./static/img/popular/popular-logo-4.png" alt="">
+                    <div class="text">帝国LOL</div>
+                </a>
+                <a href="#" class="item item-5">
+                    <img class="logo" src="./static/img/popular/popular-logo-5.png" alt="">
+                    <div class="text">天天爱消除</div>
+                </a>
+                <a href="#" class="item item-6">
+                    <img class="logo" src="./static/img/popular/popular-logo-6.png" alt="">
+                    <div class="text">全民泡泡大作战</div>
+                </a>
+                <a href="#" class="item item-7">
+                    <img class="logo" src="./static/img/popular/popular-logo-7.png" alt="">
+                    <div class="text">保卫萝卜</div>
+                </a>
+                <a href="#" class="item item-8">
+                    <img class="logo" src="./static/img/popular/popular-logo-8.png" alt="">
+                    <div class="text">有杀气童话</div>
+                </a>
+                <a href="#" class="item item-9">
+                    <img class="logo" src="./static/img/popular/popular-logo-9.png" alt="">
+                    <div class="text">皇室战争</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 视频推荐、视频综合榜 -->
+    <div class="body-container-vrecommend clearfix">
+        <!-- 视频推荐 -->
+        <div class="vrecommend-vrecommend clearfix">
+            <div class="vrecommend-title">
+                <div class="vrecommend-title-left">
+                    <i class="vrecommend-icon"></i>
+                    <span>视频推荐</span>
+                </div>
+                <div class="vrecommend-title-right">
+                    <a href="#">更多 ></a>
+                </div>
+            </div>
+            <div class="vrecommend-content clearfix">
+                <a href="#" class="vrecommend-content-box">
+                    <div class="cover">
+                        <img class="cover-img" src="./static/img/vrecommend/vrecommend-1.png" alt="">
+                        <div class="play-box">
+                            <i class="play"></i>
+                        </div>
+                        <span class="tag-time">07:00</span>
+                        <span class="tag-type">王者荣耀</span>
+                    </div>
+                    <div class="content">
+                        <div class="message">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</div>
+                        <i class="user"></i>
+                        <span class="nikename">小流川枫小流川枫小流川枫</span>
+                        <span class="fire clearfix">200</span>
+                        <i class="look"></i>
+                    </div>
+                </a>
+                <a href="#" class="vrecommend-content-box">
+                    <div class="cover">
+                        <img class="cover-img" src="./static/img/vrecommend/vrecommend-2.png" alt="">
+                        <div class="play-box">
+                            <i class="play"></i>
+                        </div>
+                        <span class="tag-time">08:00</span>
+                        <span class="tag-type">火线精英</span>
+                    </div>
+                    <div class="content">
+                        <div class="message">王者荣耀QGC争霸赛</div>
+                        <i class="user"></i>
+                        <span class="nikename">小流川枫</span>
+                        <span class="fire clearfix">300</span>
+                        <i class="look"></i>
+                    </div>
+                </a>
+                <a href="#" class="vrecommend-content-box">
+                    <div class="cover">
+                        <img class="cover-img" src="./static/img/vrecommend/vrecommend-3.png" alt="">
+                        <div class="play-box">
+                            <i class="play"></i>
+                        </div>
+                        <span class="tag-time">09:00</span>
+                        <span class="tag-type">王者荣耀</span>
+                    </div>
+                    <div class="content">
+                        <div class="message">王者荣耀QGC争霸赛</div>
+                        <i class="user"></i>
+                        <span class="nikename">小流川枫</span>
+                        <span class="fire clearfix">200</span>
+                        <i class="look"></i>
+                    </div>
+                </a>
+                <a href="#" class="vrecommend-content-box">
+                    <div class="cover">
+                        <img class="cover-img" src="./static/img/vrecommend/vrecommend-4.png" alt="">
+                        <div class="play-box">
+                            <i class="play"></i>
+                        </div>
+                        <span class="tag-time">10:00</span>
+                        <span class="tag-type">王者荣耀</span>
+                    </div>
+                    <div class="content">
+                        <div class="message">王者荣耀QGC争霸赛</div>
+                        <i class="user"></i>
+                        <span class="nikename">小流川枫</span>
+                        <span class="fire clearfix">200</span>
+                        <i class="look"></i>
+                    </div>
+                </a>
+                <a href="#" class="vrecommend-content-box">
+                    <div class="cover">
+                        <img class="cover-img" src="./static/img/vrecommend/vrecommend-5.png" alt="">
+                        <div class="play-box">
+                            <i class="play"></i>
+                        </div>
+                        <span class="tag-time">11:00</span>
+                        <span class="tag-type">火线精英</span>
+                    </div>
+                    <div class="content">
+                        <div class="message">王者荣耀QGC争霸赛</div>
+                        <i class="user"></i>
+                        <span class="nikename">小流川枫</span>
+                        <span class="fire clearfix">200</span>
+                        <i class="look"></i>
+                    </div>
+                </a>
+                <a href="#" class="vrecommend-content-box">
+                    <div class="cover">
+                        <img class="cover-img" src="./static/img/vrecommend/vrecommend-6.png" alt="">
+                        <div class="play-box">
+                            <i class="play"></i>
+                        </div>
+                        <span class="tag-time">12:00</span>
+                        <span class="tag-type">王者荣耀</span>
+                    </div>
+                    <div class="content">
+                        <div class="message">王者荣耀QGC争霸赛</div>
+                        <i class="user"></i>
+                        <span class="nikename">小流川枫</span>
+                        <span class="fire clearfix">200</span>
+                        <i class="look"></i>
+                    </div>
+                </a>
+                <a href="#" class="vrecommend-content-box">
+                    <div class="cover">
+                        <img class="cover-img" src="./static/img/vrecommend/vrecommend-7.png" alt="">
+                        <div class="play-box">
+                            <i class="play"></i>
+                        </div>
+                        <span class="tag-time">13:00</span>
+                        <span class="tag-type">王者荣耀</span>
+                    </div>
+                    <div class="content">
+                        <div class="message">王者荣耀QGC争霸赛</div>
+                        <i class="user"></i>
+                        <span class="nikename">小流川枫</span>
+                        <span class="fire clearfix">200</span>
+                        <i class="look"></i>
+                    </div>
+                </a>
+                <a href="#" class="vrecommend-content-box">
+                    <div class="cover">
+                        <img class="cover-img" src="./static/img/vrecommend/vrecommend-8.png" alt="">
+                        <div class="play-box">
+                            <i class="play"></i>
+                        </div>
+                        <span class="tag-time">15:00</span>
+                        <span class="tag-type">火线精英</span>
+                    </div>
+                    <div class="content">
+                        <div class="message">王者荣耀QGC争霸赛</div>
+                        <i class="user"></i>
+                        <span class="nikename">小流川枫</span>
+                        <span class="fire clearfix">200</span>
+                        <i class="look"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 视频综合榜 -->
+        <div class="vrecommend-vlist clearfix">
+            <div class="vlist-title">
+                <div class="vlist-title-left">
+                    <i class="vlist-icon"></i>
+                    <span>视频综合榜</span>
+                </div>
+                <div class="vlist-title-right">
+                    <a href="#">更多排行 ></a>
+                </div>
+            </div>
+            <div class="vlist-content clearfix">
+                <a href="#" class="vlist-list">
+                    <div class="left">
+                        <img src="./static/img/vrecommend/vlist-1.png" alt="">
+                        <div class="label label-1">1</div>
+                    </div>
+                    <div class="right-content">
+                        <p class="vlist-message message">2017最强王者争霸赛冠军杯荣耀之战最强王者争霸赛冠军杯荣最强2017最强王者争霸赛冠军杯荣耀之战最强王者争霸赛冠军杯荣最强
+                        </p>
+                        <div class="special">综合评分：<span class="score">567</span></div>
+                    </div>
+                </a>
+                <a href="#" class="vlist-list">
+                    <div class="left">
+                        <img src="./static/img/vrecommend/vlist-2.png" alt="">
+                        <div class="label label-2">2</div>
+                    </div>
+                    <div class="right-content">
+                        <p class="vlist-message message">2017最强王者争霸赛冠军杯荣耀之战</p>
+                        <div class="special">综合评分：<span class="score">4.5w</span></div>
+                    </div>
+                </a>
+                <a href="#" class="vlist-list">
+                    <div class="left">
+                        <img src="./static/img/vrecommend/vlist-2.png" alt="">
+                        <div class="label label-3">3</div>
+                    </div>
+                    <div class="right-content">
+                        <p class="vlist-message message">2017最强王者争霸赛冠军杯荣耀之战最强王者争霸赛冠军杯荣最强2017最强王者争霸赛冠军杯荣耀之战最强王者争霸赛冠军杯荣最强
+                        </p>
+                        <div class="special">综合评分：<span class="score">5.0w</span></div>
+                    </div>
+                </a>
+                <a href="#" class="vlist-list">
+                    <div class="left">
+                        <img src="./static/img/vrecommend/vlist-2.png" alt="">
+                        <div class="label label-3">4</div>
+                    </div>
+                    <div class="right-content">
+                        <p class="vlist-message message">2017最强王者争霸赛冠军杯荣耀之战最强王者争霸赛冠军杯荣最强2017最强王者争霸赛冠军杯荣耀之战最强王者争霸赛冠军杯荣最强
+                        </p>
+                        <div class="special">综合评分：<span class="score">5.0w</span></div>
+                    </div>
+                </a><a href="#" class="vlist-list">
+                    <div class="left">
+                        <img src="./static/img/vrecommend/vlist-2.png" alt="">
+                        <div class="label label-3">5</div>
+                    </div>
+                    <div class="right-content">
+                        <p class="vlist-message message">2017最强王者争霸赛冠军杯荣耀之战最强王者争霸赛冠军杯荣最强2017最强王者争霸赛冠军杯荣耀之战最强王者争霸赛冠军杯荣最强
+                        </p>
+                        <div class="special">综合评分：<span class="score">5.0w</span></div>
+                    </div>
+                </a><a href="#" class="vlist-list">
+                    <div class="left">
+                        <img src="./static/img/vrecommend/vlist-2.png" alt="">
+                        <div class="label label-3">6</div>
+                    </div>
+                    <div class="right-content">
+                        <p class="vlist-message message">2017最强王者争霸赛冠军杯荣耀之战最强王者争霸赛冠军杯荣最强2017最强王者争霸赛冠军杯荣耀之战最强王者争霸赛冠军杯荣最强
+                        </p>
+                        <div class="special">综合评分：<span class="score">5.0w</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- kpl分割图 -->
+    <div class="body-container-kpl clearfix">
+        <a href="#" class="kpl-ad"></a>
+    </div>
+
+    <!-- 全能大神 -->
+    <div class="body-container-okami">
+        <div class="okami">
+            <div class="okami-title">
+                <div class="okami-title-left">
+                    <i class="okami-icon"></i>
+                    <span class="special">全能大神</span>
+                </div>
+                <div class="okami-title-right">
+                    <a href="#">更多 ></a>
+                </div>
+            </div>
+            <div class="okami-content">
+                <a href="#" class="okami-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/okami/okami-1.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="okami-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/okami/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="okami-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/okami/okami-2.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="okami-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/okami/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="okami-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/okami/okami-3.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="okami-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/okami/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="okami-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/okami/okami-4.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="okami-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/okami/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="okami-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/okami/okami-5.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="okami-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/okami/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="okami-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/okami/okami-6.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="okami-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/okami/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="okami-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/okami/okami-7.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="okami-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/okami/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="okami-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/okami/okami-8.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="okami-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/okami/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="okami-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/okami/okami-9.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="okami-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/okami/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="okami-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/okami/okami-10.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="okami-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/okami/icon-avater.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 王者荣耀 -->
+    <div class="body-container-glory">
+        <div class="glory">
+            <div class="glory-title">
+                <div class="glory-title-left">
+                    <i class="glory-icon"></i>
+                    <span class="special">王者荣耀</span>
+                    <div class="glory-title-sub">
+                        <a href="#" class="btn live"><span>直播</span></a>
+                        <a href="#" class="btn vedio"><span>视频</span></a>
+                    </div>
+                </div>
+                <div class="glory-title-right">
+                    <a href="#">更多 ></a>
+                </div>
+            </div>
+            <div class="glory-content">
+                <a href="#" class="glory-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/glory/glory-1.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="glory-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/glory/icon-avater.png" alt="">
+                </a>
+
+
+
+                <a href="#" class="glory-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/glory/glory-2.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="glory-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/glory/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="glory-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/glory/glory-3.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="glory-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/glory/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="glory-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/glory/glory-4.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="glory-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/glory/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="glory-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/glory/glory-5.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="glory-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/glory/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="glory-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/glory/glory-6.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="glory-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/glory/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="glory-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/glory/glory-7.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="glory-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/glory/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="glory-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/glory/glory-8.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="glory-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/glory/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="glory-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/glory/glory-9.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="glory-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/glory/icon-avater.png" alt="">
+                </a>
+                <a href="#" class="glory-content-box">
+                    <div class="cover">
+                        <img class="img" src="./static/img/glory/glory-10.png" alt="">
+                        <span class="tag-type">火线精英</span>
+                        <div class="play-content">
+                            <i class="play"></i>
+                        </div>
+                    </div>
+                    <div class="glory-content-text">
+                        <span class="name">小流川枫小流川枫小流川枫</span>
+                        <p class="text">王者荣耀QGC争霸赛王者荣耀QGC争霸赛王者荣耀QGC争霸赛</p>
+                    </div>
+                    <img class="avater" src="./static/img/glory/icon-avater.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer clearfix">
+        <div class="friendly-link">
+            <div class="friendly-wrap">
+                <span>友情链接：</span>
+                <a href="#">4399小游戏</a> |
+                <a href="#">hao123小游戏</a> |
+                <a href="#">赛尔号</a> |
+                <a href="#">漫画网</a> |
+                <a href="#">游久网</a> |
+                <a href="#">洛克王国宠物大全</a> |
+                <a href="#">奥奇传说</a> |
+                <a href="#">做饭小游戏</a> |
+                <a href="#">奥特曼兄弟</a> |
+                <a href="#">笑话大全</a> |
+                <a href="#">手机游戏</a> |
+                <a href="#">手机铃声</a>
+            </div>
+        </div>
+        <div class="bottom-link">
+            <div class="wrap bottom-wrap">
+                <div class="footer-content">
+                    <div class="footer-content-icon">
+                        <div class="footer-content-icon-qrcode">
+                            <img src="./static/img/footer/QR-code.png" alt="">
+                            <div class="text">扫一扫 下载游拍</div>
+                        </div>
+                        <div class="footer-content-icon-logo">
+                            <i class="logo"></i>
+                            <div class="text">年轻人的直播平台</div>
+                        </div>
+                    </div>
+                    <i class="img"></i>
+                    <div class="footer-content-link">
+                        <div class="footer-content-client-link">
+                            <span class="title">游拍客户端</span>
+                            <a class="message" href="#">IOS游拍直播</a>
+                            <a class="message" href="#">安卓游拍直播</a>
+                            <a class="message" href="#">游拍直播君</a>
+                        </div>
+                        <div class="footer-content-anchor-link">
+                            <span class="title">主播相关</span>
+                            <div><a class="message" href="#">主播招募</a></div>
+                            <div><a class="message" href="#">主播规则</a></div>
+                        </div>
+                        <div class="footer-content-tutorials-link">
+                            <span class="title">直播教程</span>
+                            <a class="message" href="#">安卓教程</a>
+                            <a class="message" href="#">IOS教程</a>
+                            <a class="message" href="#">电脑教程</a>
+                        </div>
+                        <div class="footer-content-help-link">
+                            <span class="title">帮助</span>
+                            <a class="message" href="#">官方交流群 580659535</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap footer-remarks">
+                <div class="remarks-wrap">
+                    <i class="icon"></i>
+                    <span class="text">闽网文[2015]1021-003号 | 闽ICP 备14017048号-2 | 厦门纯游互动科技有限公司</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 右侧浮窗 -->
+    <div class="float">
+        <a href="#" class="content open">
+            <span class="text" href="#">开播</span>
+        </a>
+        <a href="#" class="content download">
+            <span class="text" href="#">下载<br>游拍</span>
+        </a>
+        <a href="#" class="content opinion">
+            <span class="text" href="#">意见<br>反馈</span>
+        </a>
+        <a href="#" class="content totop">
+            <span class="text" href="#">返回<br>顶部</span>
+        </a>
+    </div>
+
+    <script src="./js/tools.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

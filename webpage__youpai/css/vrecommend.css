@@ -1,0 +1,310 @@
+.body-container-vrecommend {
+    width: 1420px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.vrecommend-vrecommend {
+    float: left;
+    width: 1023px;
+}
+
+.vrecommend-icon {
+    display: inline-block;
+    width: 28px;
+    height: 26px;
+    background: url(../static/img/css_sprites.png) -490px -280px;
+}
+
+.vlist-icon {
+    display: inline-block;
+    width: 28px;
+    height: 26px;
+    background: url(../static/img/css_sprites.png) -336px -467px;
+}
+
+.vrecommend-title-right {
+    float: right;
+    margin-top: 5px;
+    margin-right: 9px;
+}
+
+.vrecommend-title-right a {
+    color: rgb(93, 93, 93);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.vrecommend-title-left {
+    position: relative;
+}
+
+.vrecommend-title-left span {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-left: 7px;
+    font-size: 22px;
+}
+
+.vrecommend-content {
+    width: 1044px;
+    margin-top: -5px;
+    margin-left: -21px;
+    overflow-x: hidden;
+}
+
+.vrecommend-title div {
+    display: inline-block;
+}
+
+.vrecommend-content-box {
+    float: left;
+    width: 240px;
+    height: 195px;
+    margin-top: 20px;
+    margin-left: 21px;
+    overflow: hidden;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.vrecommend-content-box .cover {
+    position: relative;
+    width: 240px;
+    height: 135px;
+    background-color: rgb(0, 0, 0);
+}
+
+.vrecommend-content-box .content {
+    width: 240px;
+    height: 60px;
+    padding: 10px 10px 15px 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.vrecommend-content-box .cover-img {
+    display: inline-block;
+    width: 240px;
+    height: 135px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.vrecommend-content-box:hover .cover-img {
+    opacity: .6;
+}
+
+.vrecommend-content-box:hover .message {
+    color: rgb(255, 156, 0);
+}
+
+.vrecommend-content-box:hover .play {
+    background-size: 51px 51px;
+    width: 51px;
+    height: 51px;
+}
+
+.vrecommend-content-box .tag-time {
+    position: absolute;
+    bottom: 7px;
+    left: 10px;
+    width: 39px;
+    height: 18px;
+    padding-top: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    zoom: .8;
+    color: rgb(255, 255, 255);
+}
+
+.vrecommend-content-box .tag-type {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 94px;
+    height: 23px;
+    padding-top: 5px;
+    padding-left: 18px;
+    background: url(../static/img/css_sprites.png) -540px -388px;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.vrecommend-content-box .play-box {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.vrecommend-content-box .play {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    background-image: url(../static/img/vrecommend/icon-play.png);
+    background-size: 0 0;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    transition: all 0.4s;
+}
+
+.vrecommend-content-box .message {
+    width: 222px;
+    margin-bottom: 9px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(93, 93, 93);
+    font-size: 14px;
+}
+
+.vrecommend-content-box .user {
+    display: inline-block;
+    width: 12px;
+    height: 13.5px;
+    background: url(../static/img/css_sprites.png) -575px -431px;
+}
+
+.vrecommend-content-box .nikename {
+    display: inline-block;
+    width: 100px;
+    font-size: 14px;
+    color: rgb(161, 161, 161);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vrecommend-content-box .look {
+    float: right;
+    width: 14px;
+    height: 15px;
+    background: url(../static/img/css_sprites.png) -218px -287.5px;
+}
+
+.vrecommend-content-box .fire {
+    float: right;
+    margin-left: 5px;
+    font-size: 14px;
+    color: rgb(161, 161, 161);
+}
+
+.vrecommend-vlist {
+    float: right;
+    width: 358px;
+}
+
+
+.vlist-title div {
+    display: inline-block;
+}
+
+.vlist-title-right {
+    float: right;
+    margin-top: 5px;
+    margin-right: 9px;
+}
+
+.vlist-title-right a {
+    color: rgb(93, 93, 93);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.vlist-title-left {
+    position: relative;
+}
+
+.vlist-title-left span {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-left: 7px;
+    font-size: 22px;
+}
+
+.vlist-content {
+    width: 358px;
+    height: 410px;
+    margin-top: 15px;
+    padding-left: 5px;
+    background-color: rgb(255, 255, 255);
+    overflow-y: scroll;
+}
+
+.vlist-list {
+    float: left;
+    height: 86px;
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+    border-radius: 5px;
+    color: rgb(93, 93, 93);
+}
+
+.vlist-list:hover .right-content .message {
+    color: rgb(255, 156, 0);
+}
+
+.vlist-list:hover {
+    background-color: rgb(245, 246, 247);
+}
+
+.vlist-list .left {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+}
+
+.vlist-list .label {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(245, 246, 247);
+    background: url(../static/img/css_sprites.png)  -501px -467px;
+}
+
+.vlist-list .label-1 {
+    background: url(../static/img/css_sprites.png) -539px -467px;
+}
+
+.vlist-list .label-2 {
+    background: url(../static/img/css_sprites.png) -463px -467px;
+}
+
+.vlist-list .right-content {
+    float: right;
+    margin-left: 10px;
+    width: 188px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.vlist-list .message {
+    width: 188px;
+    font-size: 12px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+.vlist-list .special {
+    margin-top: 8px;
+    color: rgb(167, 167, 167);
+
+}
+
+.vlist-list .score {
+    color: rgb(245, 73, 69);
+}

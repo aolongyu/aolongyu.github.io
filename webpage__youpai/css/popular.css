@@ -1,0 +1,113 @@
+.body-container-popular {
+    width: 1420px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.popular {
+    width: 1420px;
+    overflow-x: hidden;
+}
+
+.popular-icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(../static/img/css_sprites.png) -241px -514px;
+}
+
+.popular-title-left {
+    display: block;
+    float: left;
+}
+
+.popular-title-right {
+    float: right;
+    margin-top: 8px;
+    margin-right: 9px;
+}
+
+.popular-title-right a {
+    color: rgb(93, 93, 93);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.popular-title-left span {
+    color: rgb(93, 93, 93);
+    font-size: 14px;
+}
+
+.popular-title-left .sub {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+.popular-title-left .sub a {
+    color: rgb(93, 93, 93);
+}
+
+.popular-title-left .sub a:hover {
+    color: rgb(255, 156, 0);
+}
+
+.popular-title-left .sub .special {
+    color: rgb(255, 156, 0);
+}
+
+.popular-title-left .special {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-left: 7px;
+    color: black;
+    font-size: 22px;
+}
+
+.popular-content {
+    margin-top: 15px;
+    margin-left: -20px;
+}
+
+.popular-content .item {
+    float: left;
+    position: relative;
+    width: 140px;
+    height: 170px;
+    margin-left: 20px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(93, 93, 93);
+}
+
+.popular-content .logo {
+    width: 102px;
+    height: 102px;
+    margin-top: 15px;
+    border-radius: 22px;
+    font-size: 14px;
+    transition: all .4s;
+}
+
+.popular-content .text {
+    display: inline-block;
+    width: 110px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(93, 93, 93);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.popular-content .item:hover .text {
+    color: rgb(255, 156, 0);
+}
+
+.popular-content .item:hover {
+    background: url(../static/img/css_sprites.png) -10px -142px;
+    background-color: rgb(255, 255, 255);
+}

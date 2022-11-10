@@ -1,0 +1,46 @@
+/**
+ * @description 右侧浮窗
+ * @author aolongyu
+ * @created 2020/11/20 17:02:10
+ */
+
+.float {
+    position: fixed;
+    top: 591px;
+    right: 0;
+    width: 60px;
+}
+
+.float .content {
+    position: relative;
+    float: right;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 5px;
+    background: url(../static/img/css_sprites.png) -170px -142px;
+    line-height: 18px;
+}
+
+.float .open {
+    width: 67px;
+    height: 80px;
+    background: url(../static/img/css_sprites.png) -442px -332px;
+}
+
+.float .open:hover {
+    background: url(../static/img/css_sprites.png) -10px -467px;
+}
+
+.float .content .text {
+    position: absolute;
+    top: 10px;
+    right: 15.5px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.float .open .text {
+    top: 40px;
+    font-size: 14px;
+    color: rgb(253, 123, 40);
+}
