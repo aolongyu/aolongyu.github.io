@@ -196,7 +196,7 @@
 /******/_.paths=[],
 /******/_.children||(_.children=[])
 /******/,_),
-/******/__webpack_require__.p="/",
+/******/__webpack_require__.p="./",
 /******/
 /******/ /* webpack/runtime/css loading */
 /******/(()=>{
